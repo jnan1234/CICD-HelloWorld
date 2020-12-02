@@ -23,7 +23,7 @@ spec:
         image: itdbuild/cicd
         imagePullPolicy: Always
         ports:
-        - containerPort: 2025
+        - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -37,6 +37,6 @@ spec:
   type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 2025
-    targetPort: 2025
+    port: 8080
+    targetPort: 8080
     nodePort: 31400

@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: framework
-        image: itdbuild/framework
+        image: itdbuild/cicd
         imagePullPolicy: Always
         ports:
         - containerPort: 2025
